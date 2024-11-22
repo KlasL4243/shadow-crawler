@@ -1,3 +1,9 @@
+# firebase
+firebase_options.dart
+firebase-messaging-sw.js
+
+.firebase/
+
 # Miscellaneous
 *.class
 *.log

@@ -1,0 +1,29 @@
+{
+  "flutter": {
+    "platforms": {
+      "dart": {
+        "lib/firebase_options.dart": {
+          "projectId": "shadow-crawler",
+          "configurations": {
+            "web": "1:158264067833:web:eeaa9f61317addf30e8428"
+          }
+        }
+      }
+    }
+  },
+  "hosting": {
+    "predeploy": "flutter build web",
+    "public": "build/web",
+    "ignore": [
+      "firebase.json",
+      "**/.*",
+      "**/node_modules/**"
+    ],
+    "rewrites": [
+      {
+        "source": "**",
+        "destination": "/index.html"
+      }
+    ]
+  }
+}

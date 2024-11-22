@@ -32,6 +32,8 @@ class MainApp extends StatelessWidget {
       }
       await messaging.getToken(vapidKey: vapidKey);
 
+      await messaging.subscribeToTopic("all");
+
       print('User granted permission: ${settings.authorizationStatus}');
     }
 
